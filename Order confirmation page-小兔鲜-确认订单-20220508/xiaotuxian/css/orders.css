@@ -1,0 +1,259 @@
+body {
+  background-color: #f7f7f8;
+}
+
+/* 公共样式 */
+.red {
+  color: #cf4444;
+}
+
+.pannel {
+  margin-bottom: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+/* 主体内容 */
+.main {
+  /* 80px: 为了内容不被底部区域盖住 */
+  padding: 12px 11px 80px;
+}
+
+/* 用户信息 */
+.user_msg {
+  display: flex;
+
+  /* 侧轴居中对齐 */
+  align-items: center;
+
+  padding: 15px 0 15px 11px;
+}
+
+.user_msg .location {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  background-image: linear-gradient(90deg, #6fc2aa 5%, #54b196 100%);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  color: #fff;
+}
+
+.user_msg .user {
+  flex: 1;
+}
+
+.user_msg .more {
+  /* 激活区域 */
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  line-height: 44px;
+  color: #808080;
+}
+
+.user_msg .user .top {
+  display: flex;
+}
+
+.user_msg .user .top h5 {
+  width: 55px;
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 0px;
+  color: #262626;
+}
+
+.user_msg .user .bottom {
+  margin-top: 5px;
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 18px;
+  letter-spacing: 0px;
+  color: #333333;
+}
+
+/* 商品区域 */
+.goods {
+  display: flex;
+  padding: 11px 0 11px 11px;
+}
+
+.goods .pic {
+  /* base的css里设置了：img宽度100% */
+  width: 85px;
+  height: 85px;
+  margin-right: 10px;
+}
+
+.goods .info {
+  flex: 1;
+}
+
+.goods .info h5 {
+  font-size: 13px;
+  color: #262626;
+  font-weight: 400;
+}
+
+.goods .info p {
+  width: 100px;
+  height: 20px;
+  margin: 5px 0;
+  background-color: #f7f7f8;
+  border-radius: 5px;
+  font-size: 12px;
+  color: #888;
+}
+
+.goods .info p span:first-child {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.goods .info p span:last-child {
+  margin-right: 5px;
+}
+
+.goods .info .price {
+  font-size: 12px;
+}
+
+.goods .info .price i {
+  margin-left: 3px;
+  font-size: 16px;
+}
+
+.goods .info .price span:last-child {
+  margin-left: 5px;
+  text-decoration: line-through;
+  color: #999;
+}
+
+.goods .count {
+  width: 44px;
+  height: 44px;
+  margin-right: 7px;
+  text-align: center;
+  line-height: 44px;
+}
+
+.goods .price span:nth-last-child() {
+  font-size: 9px;
+}
+
+/* 其他信息 */
+.others {
+  padding: 15px;
+}
+
+.others div {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.others div:last-child {
+  margin-bottom: 0;
+}
+
+/* 第二行标题和p之间的距离 */
+.others div:nth-child(2) h5 {
+  margin-right: 20px;
+}
+
+.others h5,
+.others p {
+  font-size: 13px;
+  font-weight: 400;
+  color: #262626;
+}
+
+.others div:nth-child(2) p {
+  font-size: 12px;
+  color: #989898;
+}
+
+.others div:last-child i {
+  width: 7px;
+  height: 11px;
+  color: #808080;
+  text-align: center;
+  line-height: 11px;
+}
+
+/* 找到第一和第二个div 设置主轴对齐方式 */
+.others div:nth-child(2n + 1) {
+  justify-content: space-between;
+}
+
+/* 计算总价 */
+
+.all-price {
+  padding: 15px;
+}
+
+.all-price div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.all-price div:last-child {
+  margin-bottom: 0;
+}
+
+.all-price div h5,
+.all-price div p {
+  font-size: 13px;
+  font-weight: 400;
+  color: #262626;
+}
+
+.all-price div:last-child p {
+  color: #cf4444;
+}
+
+/* 主体内容 */
+
+/* 底部支付 */
+.pay {
+  /* 固定定位脱标！脱标问题：压在别的内容上面 */
+  position: fixed;
+  left: 0;
+  bottom: 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  height: 80px;
+
+  padding: 0 11px;
+  border-top: 1px solid #ededed;
+  background-color: #fff;
+}
+
+.pay .left {
+  font-size: 12px;
+  color: #1e1e1e;
+}
+
+.pay .left i {
+  font-size: 20px;
+}
+
+.pay .right a {
+  display: block;
+  width: 90px;
+  height: 35px;
+  background-image: linear-gradient(90deg, #6fc2aa 5%, #54b196 100%);
+  border-radius: 3px;
+  text-align: center;
+  line-height: 35px;
+  font-size: 13px;
+  color: #fff;
+}
+/* 底部支付 */
