@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Ubuntu:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | NFT preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      body {
+        background-color: #0c1a2d;
+      }
+      .main {
+        margin: auto auto;
+        width: 350px;
+        height: 597px;
+        background-color: #14273e;
+        border-radius: 5%;
+      }
+
+      .main .pic {
+        position: relative;
+      }
+      .main .pic img {
+        /* display: inline-block; */
+        padding: 25px 25px 0 25px;
+        width: 300px;
+        height: 300px;
+        border-radius: 15%;
+      }
+
+      .cover {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        /* padding: 80px 50px 0 50px; */
+        width: 300px;
+        height: 300px;
+        border-radius: 12%;
+        background-color: hsl(178, 100%, 50%);
+        opacity: 0;
+      }
+
+      .main .pic .cover:hover {
+        opacity: 0.5;
+        background-color: hsl(178, 100%, 50%);
+      }
+
+      .txt .title {
+        padding-left: 25px;
+        font-family: "Ubuntu", sans-serif;
+        font-size: 18px;
+        font-weight: 800;
+        color: hsl(0, 0%, 100%);
+      }
+
+      .txt p:nth-child(2) {
+        padding-left: 25px;
+        font-family: "Ubuntu", sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        color: hsl(215, 32%, 27%);
+      }
+
+      .txt {
+        position: relative;
+      }
+
+      .txt:after {
+        content: "";
+        position: absolute;
+        bottom: -13px;
+        left: 25px;
+        height: 50%;
+        width: 300px;
+        border-bottom: 1px solid hsl(0, 0%, 100%);
+      }
+      .box {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .box .right,
+      .box .left {
+        position: relative;
+        padding-right: 25px;
+        padding-left: 25px;
+        color: hsl(215, 51%, 70%);
+        vertical-align: middle;
+      }
+
+      .box .left {
+        padding-left: 40px;
+      }
+
+      .box .left span {
+        color: hsl(178, 100%, 50%);
+      }
+
+      .box .right img {
+        position: absolute;
+        top: 2px;
+        left: 2px;
+      }
+
+      .box .left img {
+        position: absolute;
+        top: 2px;
+        left: 22px;
+      }
+
+      .bottom {
+        display: flex;
+        align-items: center;
+        padding-top: 20px;
+        padding-left: 25px;
+      }
+
+      .bottom img {
+        width: 33px;
+        height: 33px;
+        border-radius: 50%;
+        border: 1px solid #fff;
+      }
+
+      .bottom p {
+        padding-left: 10px;
+        font-family: "Ubuntu", sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+      }
+
+      .bottom p span {
+        color: hsl(0, 0%, 100%);
+      }
+
+      .attribution {
+        margin: 0 auto;
+        padding-top: 15px;
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="pic">
+        <a href="#"><img src="./images/image-equilibrium.jpg" alt="" /></a>
+        <div class="cover">
+          <div class="across"></div>
+        </div>
+      </div>
+      <div class="txt">
+        <p class="title">Equilibrium #3429</p>
+        <p>Our Equilibrium collection promotes balance and calm.</p>
+        <div class="box">
+          <div class="left">
+            <img src="./images/icon-ethereum.svg" alt="" />
+            <span>0.041 ETH</span>
+          </div>
+          <div class="right">
+            <img src="./images/icon-clock.svg" alt="" />
+            <span>3 days left</span>
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <img src="./images/image-avatar.png" alt="" />
+        <p>Creation of <span>Jules Wyvern</span></p>
+      </div>
+
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://selsa98.github.io/Practice-projects---Frontend/"
+          >Suki</a
+        >.
+      </div>
+    </div>
+  </body>
+</html>
